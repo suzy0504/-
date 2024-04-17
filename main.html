@@ -17,165 +17,176 @@
     <script src="script.js"></script>
 </head>
 
-    <style>
-        
-         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
-        .maintitle {
-            height: 250px;
-            display: flex;
-            justify-content: center;
-        }
+    .maintitle {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+    }
 
-        .maintitle>button {
-            flex-direction: column;
+    .maintitle>button {
+        flex-direction: column;
 
-        }
+    }
 
-        .subtitle {
-            height: 200px;
-            line-height: 30px;
-            margin-top: 25px;
-        }
+    .subtitle {
+        height: 200px;
+        line-height: 30px;
+        margin-top: 25px;
+    }
 
-        .sibzoimg {
-            width: 200px;
-            margin-right: -200px;
-            padding-top: 30px;
+    .sibzoimg {
+        width: 200px;
+        margin-right: -200px;
+        padding-top: 30px;
 
-        }
+    }
 
 
-        .name {
-            font-size: 30px;
-            border-left-color: black;
-            font-weight: bold;
-        }
+    .name {
+        font-size: 30px;
+        border-left-color: black;
+        font-weight: bold;
+    }
 
-        .middle {
-            font-weight: bold;
-            height: 30px;
-            margin-top: 25px;
-            display: flex;
-            word-spacing: 30px;
-        }
+    .middle {
+        font-weight: bold;
+        height: 30px;
+        margin-top: 25px;
+        display: flex;
+        word-spacing: 30px;
+    }
 
-        .toptitle {
-            display: flex;
-            width: 700px;
-            gap: 30px;
-            padding-top: 30px;
-        }
+    .toptitle {
+        display: flex;
+        width: 700px;
+        gap: 30px;
+        padding-top: 30px;
+    }
 
-        .story {
+    .story {
 
-            float: left;
-            display: flex;
-            text-align: center;
-            margin-left: -240px;
-            margin-top: -70px;
+        float: left;
+        display: flex;
+        text-align: center;
+        margin-left: -240px;
+        margin-top: -70px;
 
-        }
+    }
 
-        .box1 {
-            padding: 10px 30px 10px 30px;
-            font-weight: bold;
-        }
+    .box1 {
+        padding: 10px 30px 10px 30px;
+        font-weight: bold;
+    }
 
-        .box2 {
-            padding: 10px 40px;
-            font-weight: bold;
-        }
+    .box2 {
+        padding: 10px 40px;
+        font-weight: bold;
+    }
 
-        .box3 {
-            padding: 10px 20px;
-            font-weight: bold;
-        }
-    </style>
+    .box3 {
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+</style>
 </head>
 
 <body>
 
     <div id="wrap">
-    <header id="header">
-        <div class="header-wrap">
-            <h2 class="logo"><a href="#">Spartagram</a></h2>
+        <header id="header">
+            <div class="header-wrap">
+                <div class="logo-wrap">
+                    <h2 class="logo"><a href="#">Spartagram</a></h2>
+                    <div class="menuicon" onclick="location.href='http://www.naver.com'"> <!-- onclick으로 링크(팀 목록)넣는 곳 -->
+                        <!-- 세줄아이콘 넣는 곳 -->
+                        <svg width="40px" height="40px" stroke="black" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M4 6h16M4 12h16M4 18h16">
+                            </path>
+                        </svg>
 
-
-            <div class="btn">
-                <svg class="menubtn" width="32px" height="32px" stroke="black" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-            </div>
-
-            <div onclick="history.back();" class="page_cover"></div>
-
-            <div id="menu">
-                <button onclick="history.back();" type="button" class="btn-close" aria-label="Close"></button>
-                <ul class="menu-list">
-                    <li><a href="#">고종원</a></li>
-                    <li><a href="#">유수지</a></li>
-                    <li><a href="#">양민애</a></li>
-                    <li><a href="#">김재훈</a></li>
-                    <li><a href="#">양이준</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <div class="maintitle">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <img class="sibzoimg" href="https://ibb.co/PrZwvqd" src="https://i.ibb.co/NF6ZdcM/10.png"
-                    class="img-fluid rounded-start" alt="10" border="0">
-            </div>
-            <div class="col-md-8">
-                <div>
-
-                    <div class="toptitle">
-                        <h5 class="name">개발참십조</h5>
-                        <div>
-                            <button type="button" class="btn btn-secondary btn-sm" disabled>팔로우</button>
-                            <button type="button" class="btn btn-secondary btn-sm" disabled>메세지 보내기</button>
-                        </div>
                     </div>
+                </div>
 
-                    <div class="middle">
-                        게시물5 팔로워5 팔로우5
-                    </div>
+       
 
-                    <div class="subtitle">
-                        <p style="font-weight: bold;" class="card-text">React 5기</p>
-                        <p class="card-text">우리 팀원을 소개합니다. (●'◡'●)</p>
-                        <p class="card-text">✏우리는 이렇게 협업해요!</p>
-                    </div>
+                <div onclick="history.back();" class="page_cover"></div>
 
-                    <div class="story">
-                        <div class="box1">
-                            <img src="https://i.ibb.co/KzFW5Hh/1.png" width="100" alt="1" border="0"></a>
-                            <p style="padding-top: 15px;">배려</p>
-                        </div>
-
-                        <div class="box2">
-                            <img src="https://i.ibb.co/3MGZRQN/2.png" width="100" alt="2" border="0"></a>
-                            <p style="padding-top: 15px;">경청</p>
-                        </div>
-
-                        <div class="box3">
-                            <img src="https://i.ibb.co/8YBZMyS/3.png" width="100" alt="3" border="0"></a>
-                            <p style="padding-top: 15px;">소통</p>
-                        </div>
-                    </div>
-
+                <div id="menu">
+                    <button onclick="history.back();" type="button" class="btn-close" aria-label="Close"></button>
+                    <ul class="menu-list">
+                        <li><a href="#">고종원</a></li>
+                        <li><a href="#">유수지</a></li>
+                        <li><a href="#">양민애</a></li>
+                        <li><a href="#">김재훈</a></li>
+                        <li><a href="#">양이준</a></li>
+                    </ul>
                 </div>
             </div>
+        </header>
+
+        <div class="maintitle">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="sibzoimg" href="https://ibb.co/PrZwvqd" src="https://i.ibb.co/NF6ZdcM/10.png"
+                        class="img-fluid rounded-start" alt="10" border="0">
+                </div>
+                <div class="col-md-8">
+                    <div>
+
+                        <div class="toptitle">
+                            <h5 class="name">개발참십조</h5>
+                            <div>
+                                <button type="button" class="btn btn-secondary btn-sm" disabled>팔로우</button>
+                                <button type="button" class="btn btn-secondary btn-sm" disabled>메세지 보내기</button>
+                            </div>
+                        </div>
+
+                        <div class="middle">
+                            게시물5 팔로워5 팔로우5
+                        </div>
+
+                        <div class="subtitle">
+                            <p style="font-weight: bold;" class="card-text">React 5기</p>
+                            <p class="card-text">우리 팀원을 소개합니다. (●'◡'●)</p>
+                            <p class="card-text">✏우리는 이렇게 협업해요!</p>
+                        </div>
+
+                        <div class="story">
+                            <div class="box1">
+                                <img src="https://i.ibb.co/KzFW5Hh/1.png" width="100" alt="1" border="0"></a>
+                                <p style="padding-top: 15px;">배려</p>
+                            </div>
+
+                            <div class="box2">
+                                <img src="https://i.ibb.co/3MGZRQN/2.png" width="100" alt="2" border="0"></a>
+                                <p style="padding-top: 15px;">경청</p>
+                            </div>
+
+                            <div class="box3">
+                                <img src="https://i.ibb.co/8YBZMyS/3.png" width="100" alt="3" border="0"></a>
+                                <p style="padding-top: 15px;">소통</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="imgwrap">
+            <article><a href="고종원님 상세페이지 url"><img src="https://via.placeholder.com/300.jpg" alt="300*300 size imgae"></a></article>
+            <article><a href="유수지님 상세페이지 url"><img src="https://via.placeholder.com/300.jpg" alt="300*300 size imgae"></a></article>
+            <article><a href="양민애님 상세페이지 url"><img src="https://via.placeholder.com/300.jpg" alt="300*300 size imgae"></a></article>
+            <article><a href="김재훈님 상세페이지 url"><img src="https://via.placeholder.com/300.jpg" alt="300*300 size imgae"></a></article>
+            <article><a href="양이준님 상세페이지 url"><img src="https://via.placeholder.com/300.jpg" alt="300*300 size imgae"></a></article>        
         </div>
     </div>
-</div>
 
 </body>
 
 </html>
-
