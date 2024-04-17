@@ -1,136 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>메인페이지</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <style>
-        .maintitle {
-            height: 250px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .maintitle>button {
-            flex-direction: column;
-
-        }
-
-        .subtitle {
-            height: 200px;
-            line-height: 10px;
-            margin-top: 25px;
-        }
-
-        .sibzoimg {
-            width: 200px;
-            margin-right: -200px;
-            padding-top: 30px;
-
-        }
-
-
-        .name {
-            font-size: 30px;
-            border-left-color: black;
-            font-weight: bold;
-        }
-
-        .middle {
-            font-weight: bold;
-            height: 30px;
-            margin-top: 25px;
-            display: flex;
-            word-spacing: 30px;
-        }
-
-        .toptitle {
-            display: flex;
-            width: 700px;
-            gap: 30px;
-            padding-top: 30px;
-        }
-
-        .story {
-
-            float: left;
-            display: flex;
-            text-align: center;
-            margin-left: -240px;
-            margin-top: -70px;
-
-        }
-
-        .box1 {
-            padding: 10px 30px 10px 30px;
-            font-weight: bold;
-        }
-
-        .box2 {
-            padding: 10px 40px;
-            font-weight: bold;
-        }
-
-        .box3 {
-            padding: 10px 20px;
-            font-weight: bold;
-        }
-    </style>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
+
 <body>
-    <div class="maintitle">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <img class="sibzoimg" href="https://ibb.co/PrZwvqd" src="https://i.ibb.co/NF6ZdcM/10.png"
-                    class="img-fluid rounded-start" alt="10" border="0">
-            </div>
-            <div class="col-md-8">
-                <div>
 
-                    <div class="toptitle">
-                        <h5 class="name">개발참십조</h5>
-                        <div>
-                            <button type="button" class="btn btn-secondary btn-sm" disabled>팔로우</button>
-                            <button type="button" class="btn btn-secondary btn-sm" disabled>메세지 보내기</button>
-                        </div>
-                    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-wrap">
+                <h2 class="logo"><a href="#">Spartagram</a></h2>
+                <div class="btn-top">
+                    <svg class="menubtn" width="32px" height="32px" stroke="black" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </div>
 
-                    <div class="middle">
-                        게시물5 팔로워5 팔로우5
-                    </div>
+                <div onclick="history.back();" class="page_cover"></div>
 
-                    <div class="subtitle">
-                        <p style="font-weight: bold;" class="card-text">React 5기</p>
-                        <p class="card-text">우리 팀원을 소개합니다. (●'◡'●)</p>
-                        <p class="card-text">✏우리는 이렇게 협업해요!</p>
-                    </div>
-
-                    <div class="story">
-                        <div class="box1">
-                            <img src="https://i.ibb.co/KzFW5Hh/1.png" width="100" alt="1" border="0"></a>
-                            <p style="padding-top: 15px;">배려</p>
-                        </div>
-
-                        <div class="box2">
-                            <img src="https://i.ibb.co/3MGZRQN/2.png" width="100" alt="2" border="0"></a>
-                            <p style="padding-top: 15px;">경청</p>
-                        </div>
-
-                        <div class="box3">
-                            <img src="https://i.ibb.co/8YBZMyS/3.png" width="100" alt="3" border="0"></a>
-                            <p style="padding-top: 15px;">소통</p>
-                        </div>
-                    </div>
-
+                <div id="menu">
+                    <button onclick="history.back();" type="button" class="btn-close" aria-label="Close"></button>
+                    <ul class="menu-list">
+                        <li><a href="#">고종원</a></li>
+                        <li><a href="#">유수지</a></li>
+                        <li><a href="#">양민애</a></li>
+                        <li><a href="#">김재훈</a></li>
+                        <li><a href="#">양이준</a></li>
+                    </ul>
                 </div>
             </div>
+        </header>
+
+
+
+
+        <div class="maintitle">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="sibzoimg" href="https://ibb.co/PrZwvqd" src="https://i.ibb.co/NF6ZdcM/10.png"
+                        class="img-fluid rounded-start" alt="10조 이미지">
+                </div>
+                <div class="col-md-8">
+                    <div>
+
+                        <div class="toptitle">
+                            <h5 class="name">개발참십조</h5>
+                            <div>
+                                <button type="button" class="btn btn-primary btn-sm fz-13"
+                                    onclick="location.href='https://www.notion.so/teamsparta/A10-e95097b743ea480480e14de3d89d18fe'">팔로우</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm fz-13">메세지 보내기</button>
+                            </div>
+                        </div>
+
+                        <div class="middle">
+                            <p>게시물 5</p>
+                            <p>팔로워 5</p>
+                            <p>팔로잉 5</p>
+                        </div>
+
+                        <div class="subtitle">
+                            <p style="font-weight: bold;" class="card-text">React 5기</p>
+                            <p class="card-text">📌 가치있는 개발자가 되자</p>
+                            <p class="card-text">우리는 <span class="hash">#존중 #경청 #소통</span> 하며 협업해요!</p>
+                        </div>
+
+                        <div class="story">
+                            <div class="box1">
+                                <img src="https://i.ibb.co/KzFW5Hh/1.png" width="120" alt="1"></a>
+                                <p style="padding-top: 15px;">존중</p>
+                            </div>
+
+                            <div class="box2">
+                                <img src="https://i.ibb.co/3MGZRQN/2.png" width="120" alt="2"></a>
+                                <p style="padding-top: 15px;">경청</p>
+                            </div>
+
+                            <div class="box3">
+                                <img src="https://i.ibb.co/8YBZMyS/3.png" width="120" alt="3"></a>
+                                <p style="padding-top: 15px;">소통</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <div class="line"></div>
+
+        <div class="imgwrap">
+            <article><a href="고종원님 상세페이지 url"><img src="https://via.placeholder.com/300.jpg"
+                        alt="300*300 size imgae"></a></article>
+            <article><a href="index.html"><img src="/img/suzy.png" alt="300*300 size imgae"></a></article>
+            <article><a href="index.html"><img src="/img/min.png" alt="300*300 size imgae"></a></article>
+            <article><a href="index.html"><img src="/img/Hero Image.png" alt="300*300 size imgae"></a></article>
+            <article><a href="index.html"><img src="/img/ejunyang.jpeg" alt="300*300 size imgae"></a></article>
+        </div>
+
+
+        <footer id="bottom" class="cboth">
+            <div class="bottom-wrap">
+                <a href="https://www.notion.so/teamsparta/A10-e95097b743ea480480e14de3d89d18fe">
+                    <img src="img/icons8-500.png" alt="노션">
+                    <p>notion by 개발참십조</p>
+                </a>
+            </div>
+        </footer>
     </div>
+
+
 </body>
 
 </html>

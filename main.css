@@ -1,353 +1,431 @@
-    html,
-    body {
-        position: relative;
-        height: 100%;
-        font-size: 18px;
-    }
-
-    /* reset */
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    ul,
-    li {
-        list-style: none;
-    }
-
-    ul,
-    p {
-        padding: 0;
-        margin: 0;
-    }
-
-    .cboth {
-        clear: both;
-    }
-
-    button {
-        background: none;
-        border: none;
-    }
-
-    :root {
-        --blue: #0066FF;
-        --white: #ffffff;
-        --basic: #222222;
-        --lightgray: #F7F7F7;
-        --hash: #869FC6;
-        --gray: #666666;
-        --gray50: #AEAEAE;
-    }
-
-
-
-
-
-
-
-
-    /****** 메인페이지 - 민애 ******/
-    /* 헤더 */
-    #wrap {
-        height: auto;
-    }
-
-    #header {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0px;
-        z-index: 99;
-        background: var(--white);
-    }
-
-    .header-wrap {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logo {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        font-size: 30px
-    }
-
-
-
-    /* 슬라이드 메뉴 */
-    html.open {
-        overflow: hidden;
-    }
-
-    .menubtn {
-        z-index: 1;
-        cursor: pointer;
-        text-align: right;
-    }
-
-    .btn-close {
-        position: absolute;
-        right: 10%;
-    }
-
-    #menu {
-        width: 50%;
-        height: 100%;
-        padding: 50px;
-        position: fixed;
-        top: 0px;
-        right: -100%;
-        z-index: 10;
-        background-color: var(--white);
-        transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        text-align: center;
-    }
-
-
-    #menu .menu-list {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #menu .menu-list li {
-        margin: 10px 0;
-    }
-
-    #menu .menu-list a {
-        font-size: 50px;
-        font-weight: bolder;
-        color: var(--white);
-        -webkit-text-stroke: 1.5px var(--basic);
-        display: block;
-        padding: 15px 0;
-        transition: all 0.3s ease;
-    }
-
-    #menu .menu-list a:hover {
-        color: var(--basic);
-    }
-
-    #menu.open {
-        right: 0;
-    }
-
-    .page_cover.open {
-        display: block;
-    }
-
-    .page_cover {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-        z-index: 4;
-        display: none;
-    }
-
-
-
-
-
-
-
-    /****** 상세페이지 - 이준 ******/
-
-    .detailWrap {
-        max-width: 1200px;
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-
-    .profile-top {
-        display: block;
-        margin: 10px 0;
-        ;
-    }
-
-    .profile-img {
-        width: 60px;
-        height: 60px;
-        background: var(--lightgray);
-        border-radius: 100px;
-        display: inline-block;
-    }
-
-    .profile-name-wrap {
-        display: inline-block;
-        vertical-align: 12px;
-        margin-left: 10px;
-    }
-
-    .profile-location {
-        font-size: 15px;
-        color: var(--gray);
-    }
-
-
-
-
-    /* 슬라이드 css */
-    .swiper {
-        height: 1200px;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-
-
-
-    /* 아이콘 및 피드 내용 */
-    .content-wrap {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    .icon-tab {
-        margin: 20px 0;
-    }
-
-    .icon-tab li {
-        float: left;
-        width: 50px;
-        margin-right: 30px;
-    }
-
-    .icon-tab li:nth-child(3) {
-        float: right;
-        margin: 0;
-    }
-
-    .icon-tab li:nth-child(4) {
-        width: 100%;
-        margin: 10px 0 20px;
-    }
-
-
-    .xi-speech-o,
-    .xi-bookmark-o {
-        font-size: 50px;
-    }
-
-
-
-    /* 좋아요 */
-
-
-
-
-    .content-feed-detail {
-        margin-bottom: 50px;
-    }
-
-    .content-feed-detail:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background: var(--gray50);
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    .hash {
-        color: var(--hash);
-    }
-
-
-
-
-    .bd-example-cssgrid [class*="grid"]>* {
-        background: var(--lightgray);
-        border-radius: 10px;
-        border: none;
-        text-align: left;
-        color: var(--gray);
-        padding-left: 60px;
-    }
-
-    .grid {
-        gap: var(--bs-gap, 1rem);
-    }
-
-    .g-col-6 {
-        transition: all 0.3s ease;
-        ;
-    }
-
-    .g-col-6:hover {
-        box-shadow: 5px 5px 10px var(--gray50);
-    }
-
-    .bd-example-cssgrid a {
-        display: block;
-    }
-
-    .g-col-6:first-child {
-        background: var(--lightgray) url('img/🦆\ icon\ _home_.png')no-repeat 20px center;
-        background-size: 25px;
-    }
-
-    .g-col-6:nth-child(2) {
-        background: var(--lightgray) url('img/🦆\ icon\ _mail_.png')no-repeat 20px center;
-        background-size: 25px;
-    }
-
-    .g-col-6:nth-child(3) {
-        background: var(--lightgray) url('img/github.png')no-repeat 20px center;
-        background-size: 30px;
-    }
-
-
-
-    /* footer */
-    #bottom {
-        background: var(--lightgray);
-        width: 100%;
-        padding: 30px 0;
-    }
-
-    .bottom-wrap {
-        max-width: 1200px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .bottom-wrap img {
-        width: 3%;
-    }
-
-    .bottom-wrap p {
-        margin-top: 5px;
-        font-size: 12px;
-        color: var(--gray);
-    }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-size: 18px;
+}
+
+/* reset */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+ul,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.cboth {
+    clear: both;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+:root {
+    --blue: #0066FF;
+    --white: #ffffff;
+    --basic: #222222;
+    --lightgray: #F7F7F7;
+    --hash: #869FC6;
+    --gray: #666666;
+    --gray50: #AEAEAE;
+}
+
+
+
+
+
+
+/****** 메인페이지 - 민애 ******/
+/* 헤더 */
+#wrap {
+    height: auto;
+}
+
+
+#header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray50);
+}
+
+.header-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px
+}
+
+.line {
+    width: 1200px;
+    height: 1px;
+    background: var(--gray50);
+    margin: 50px auto 30px;
+}
+
+.imgwrap {
+    width: 1200px;
+    height: 800px;
+    margin: 50px auto;
+}
+
+.imgwrap article {
+    float: left;
+    margin: 5px;
+    width: 390px;
+    height: 390px;
+    overflow: hidden;
+}
+
+.imgwrap article img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.imgwrap article img:hover {
+    filter: brightness(0.7);
+}
+
+
+
+/* 슬라이드 메뉴 */
+html.open {
+    overflow: hidden;
+}
+
+.menubtn {
+    z-index: 1;
+    cursor: pointer;
+    text-align: right;
+}
+
+.btn-close {
+    position: absolute;
+    right: 10%;
+}
+
+#menu {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    z-index: 10;
+    background-color: var(--white);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    text-align: center;
+}
+
+
+#menu .menu-list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#menu .menu-list li {
+    margin: 10px 0;
+}
+
+#menu .menu-list a {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--white);
+    -webkit-text-stroke: 1.5px var(--basic);
+    display: block;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+#menu .menu-list a:hover {
+    color: var(--basic);
+}
+
+#menu.open {
+    right: 0;
+}
+
+.page_cover.open {
+    display: block;
+}
+
+.page_cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 4;
+    display: none;
+}
+
+
+
+
+/***** 메인페이지 - 수지 *****/
+.maintitle {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin-top: 30px;
+}
+
+.maintitle>button {
+    flex-direction: column;
+}
+
+.subtitle {
+    height: 200px;
+    line-height: 30px;
+    margin-top: 25px;
+}
+
+.sibzoimg {
+    width: 200px;
+    margin-right: -200px;
+    padding-top: 30px;
+
+}
+
+
+.name {
+    font-size: 30px;
+    border-left-color: black;
+    font-weight: bold;
+}
+
+.fz-13 {
+    font-size: 13px;
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+
+.middle {
+    font-weight: 600;
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.toptitle {
+    display: flex;
+    width: 700px;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.story {
+    float: left;
+    display: flex;
+    text-align: center;
+    margin-left: -240px;
+    margin-top: -70px;
+
+}
+
+.box1 {
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+
+.box2 {
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+.box3 {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+/****** 상세페이지 - 이준, 재훈, 종원 ******/
+/***** 재훈 - 프로필, 이미지 슬라이드 *****/
+.detailWrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.photo {
+    width: 80%;
+    margin: 20px auto 30px auto;
+}
+
+.img-thumbnail {
+    width: 65px;
+    height: 65x;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profilename {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    margin-right: 200px;
+    margin-top: 30px;
+}
+
+
+
+
+
+/***** 이준 - 피드 내용 ~ footer *****/
+/* 아이콘 및 피드 내용 */
+.content-wrap {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.icon-tab {
+    margin: 20px 0;
+}
+
+.icon-tab li {
+    float: left;
+    width: 50px;
+    margin-right: 30px;
+}
+
+.icon-tab li:nth-child(3) {
+    float: right;
+    margin: 0;
+}
+
+.icon-tab li:nth-child(4) {
+    width: 100%;
+    margin: 10px 0 20px;
+}
+
+
+
+.content-feed-detail {
+    margin-bottom: 50px;
+}
+
+.content-feed-detail:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--gray50);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hash {
+    color: var(--hash);
+}
+
+
+
+
+/* 깃허브, 티스토리, 이메일 링크 이동 */
+.bd-example-cssgrid [class*="grid"]>* {
+    background: var(--lightgray);
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    color: var(--gray);
+    padding-left: 60px;
+}
+
+.grid {
+    gap: var(--bs-gap, 1rem);
+}
+
+.g-col-6 {
+    transition: all 0.3s ease;
+    ;
+}
+
+.g-col-6:hover {
+    box-shadow: 5px 5px 10px var(--gray50);
+}
+
+.bd-example-cssgrid a {
+    display: block;
+}
+
+.g-col-6:first-child {
+    background: var(--lightgray) url('img/🦆\ icon\ _home_.png')no-repeat 20px center;
+    background-size: 25px;
+}
+
+.g-col-6:nth-child(2) {
+    background: var(--lightgray) url('img/🦆\ icon\ _mail_.png')no-repeat 20px center;
+    background-size: 25px;
+}
+
+.g-col-6:nth-child(3) {
+    background: var(--lightgray) url('img/github.png')no-repeat 20px center;
+    background-size: 30px;
+}
+
+
+
+/* footer */
+#bottom {
+    background: var(--lightgray);
+    width: 100%;
+    padding: 30px 0;
+}
+
+.bottom-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bottom-wrap img {
+    width: 3%;
+    margin: 0 auto;
+}
+
+.bottom-wrap p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: var(--gray);
+}

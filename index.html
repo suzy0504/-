@@ -17,44 +17,13 @@
 </head>
 
 <body>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyDJNmdFC2oWbRkKWAfQ_LXQtETyN5G3oBU",
-            authDomain: "team-mini-project.firebaseapp.com",
-            projectId: "team-mini-project",
-            storageBucket: "team-mini-project.appspot.com",
-            messagingSenderId: "816765951197",
-            appId: "1:816765951197:web:8c3c6eb25bad3e19d64f34",
-            measurementId: "G-X0LT3HWQ5N"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-
-
-
-
-
-    </script>
-
-
-
     <div id="wrap">
         <header id="header">
             <div class="header-wrap">
-                <h2 class="logo"><a href="#">Spartagram</a></h2>
+                <h2 class="logo"><a href="main.html">Spartagram</a></h2>
 
 
-                <div class="btn">
+                <div class="btn-top">
                     <svg class="menubtn" width="32px" height="32px" stroke="black" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16">
@@ -70,7 +39,7 @@
                         <li><a href="#">고종원</a></li>
                         <li><a href="#">유수지</a></li>
                         <li><a href="#">양민애</a></li>
-                        <li><a href="#">김재훈</a></li>
+                        <li><a href="index.html">김재훈</a></li>
                         <li><a href="#">양이준</a></li>
                     </ul>
                 </div>
@@ -79,29 +48,69 @@
 
 
         <div class="detailWrap">
-            <div class="profile-top">
-                <p class="profile-img"></p>
-                <div class="profile-name-wrap">
-                    <strong class="profile-title">Jaehoon</strong>
-                    <p class="profile-location">서울 - Seoul</p>
+            <!--재훈 캐러셀 -->
+            <div class="profile">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbEXjnu%2FbtsGE4UKvZt%2FMlvNMILyFkFY1KUyi6uLy1%2Fimg.jpg"
+                    class="img-thumbnail" alt="...">
+
+
+                <div class="profilename">
+                    <span>Jaehoon (React_5기)</span>
+                    <span style="color: darkgray;" style="font-size: 15px;">서울 - Seoul</span>
+
+                </div>
+
+            </div>
+
+            <div class="photo">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcfATMZ%2FbtsGFybCVOb%2FcjYNhRek1MK5FOtPO6l1i0%2Fimg.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>더클라임 <span style="color:red">빨강</span> 클라이머</h5>
+                                <p>건강한 운동 아닙니다. 몸과 마음이 많이 다쳐요.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/jaehoon2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>첫 바이크</h5>
+                                <p>스티드600, 저보다 나이가 많은 바이크였어요!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/jaehoon3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>현재 타고있는 바이크</h5>
+                                <p>아퀼라125, 할리로 기변하기 위해 잠시 타는 중!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
 
-            <!-- Swiper -->
-            <div class="swiper mySwiper cboth">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="img/Hero Image.png" alt="첫번째 사진">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/Hero Image.png" alt="두번째 사진">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/Hero Image.png" alt="세번째 사진">
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
+            <!-- 재훈 캐러셀 끝-->
+
 
 
 
@@ -109,14 +118,11 @@
                 <ul class="icon-tab">
                     <li>
                         <button id="likebtn" class="feed-icon-btn" value="좋아요" onclick="like()">
-                            <svg class="feed-icon like-default" height="50px" width="50px" version="1.1" id="Capa_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 471.701 471.701" xml:space="preserve">
-                                <g>
-                                    <path
-                                        d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z">
-                                    </path>
-                                </g>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="black" width="60px"
+                                height="50px" fill="currentColor" class="bi-heart-fill feed-icon like-default"
+                                viewBox="0 -0.5 17 17">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
                             </svg>
                         </button>
                     </li>
@@ -139,8 +145,17 @@
                             </svg>
                         </a>
                     </li>
-                    <li><i class="xi-bookmark-o"></i></li>
-                    <li class="cboth"><b id="likeCount"></b>이 좋아합니다.</li>
+                    <li>
+                        <svg fill="#000000" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M416,480,256,357.41,96,480V32H416Z">
+                                </path>
+                            </g>
+                        </svg>
+                    </li>
+                    <li class="cboth"><b id="likeCount">0</b>명이 좋아합니다.</li>
 
                 </ul>
 
@@ -180,21 +195,9 @@
                 </a>
             </div>
         </footer>
+
     </div>
 
-
-
-
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
-        });
-    </script>
 </body>
 
 </html>
