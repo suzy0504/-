@@ -1,6 +1,21 @@
+function like() {
+    console.log("Like Button Clicked. ")
+    
+    const likebtn = document.getElementById('likebtn');
+    const likePath = likebtn.getElementsByTagName('path')[0];
+
+    if (likebtn.classList.contains('like-default')) {
+        likebtn.classList.remove('like-default');
+        likebtn.classList.add('like-active');  
+        likePath.setAttribute('fill', '#ffffff')
+    } else {
+        likebtn.classList.remove('like-active');
+        likebtn.classList.add('like-default');
+        likePath.setAttribute('fill', '#000000')
+    }
+}
+
 /*
-const likebtn = getElementById('likebtn');
-const likeCount = getElementById('likeConut')
 
 likebtn.addEventListener('click', () => changeClass(likebtn, likePath));
 function likeOn(likebtn, likePath){
